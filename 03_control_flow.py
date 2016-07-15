@@ -37,3 +37,29 @@ print("Done")
 
 
 print("\n\n*** For loops ***")
+for i in range(1,5): #range generates one number at a time
+    print(i)
+else:
+    print("Loop is over")
+
+print(list(range(1,5))) #prints all numbers out at the same time
+
+
+print("\n\n*** Breaks ***")
+while True:
+    s=input("Enter something: ")
+    if s=="quit":
+        break
+    print("Length of the string is", len(s))
+print("Done")
+
+
+print("\n\n*** Continue statement ***")
+while True:
+    s=input("Enter something: ")
+    if s=="quit":
+        break
+    if len(s)<3:
+        print("Too small")
+        continue #skips the rest of the statements
+    print("Input is of sufficient length")
